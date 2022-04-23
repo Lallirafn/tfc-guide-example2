@@ -8,11 +8,6 @@ variable "instance_type" {
   default     = "t3.nano"
 }
 
-variable "instance_name-1" {
-  description = "EC2 instance name"
-  default     = "Ubuntu-1"
-}
-
 variable "instance_name-2" {
   description = "EC2 instance name"
   default     = "Ubuntu-2"

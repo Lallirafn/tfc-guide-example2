@@ -18,16 +18,6 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "aws_instance" "ubuntu-1" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = var.instance_type
-
-  tags = {
-    Name                 = var.instance_name-1
-    "Linux Distribution" = "Ubuntu"
-  }
-}
-
 resource "aws_instance" "ubuntu-2" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type

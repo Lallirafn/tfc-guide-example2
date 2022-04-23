@@ -4,7 +4,7 @@ terraform {
     hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
-      name = "tfc-guide-example"
+      name = "tfc-guide-example2"
     }
   }
   required_providers {
